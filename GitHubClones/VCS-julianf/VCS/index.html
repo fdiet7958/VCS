@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/vcs.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <title>Git/GitHub Project</title>
+</head>
+<body>
+    <h1 class="myComfortaa">Git/GitHub Project - Julian Fry - May 2019</h1>
+    <hr>
+    <h3 class="myComfortaa">
+        Using a Version Control System such as Git or GitHub can provide many benefits
+        to developers. A VCS can make collaboration between team members easier and more
+        efficient. They can also track changes that you've made to the program, and store
+        earlier versions of the code. Also, they can act as a backup for your code, just in
+        case any disaster befalls your code.
+    </h3>
+    <h3 class="myComfortaa">
+        While Git and GitHub have similar names, they are not the same thing. Git is the actual
+        version control system itself, which is installed on a local machine and manages the history of
+        source code, which is stored in repositories. GitHub is an online service for hosting Git repos,
+        and its purpose is to make collaboration on projects easier, and to provide a backup for the code.
+    </h3>
+
+    <h1>Steps for setting up Git (Linux)</h1>
+        <ul>
+            <li>
+                <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/julianf/projects/VCS</b></font>$ sudo apt update
+                </pre>
+            </li>
+            <li>
+                <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/julianf/projects/VCS</b></font>$ sudo apt install git</pre>
+            </li>
+            <li>
+                <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/julianf/projects/VCS</b></font>$ git --version
+                </pre>
+            </li>
+            <li>
+                <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/julianf/projects/VCS</b></font>$ git config --global user.name &quot;SenorJulian&quot;
+                </pre>
+            </li>
+            <li>
+                <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/julianf/projects/VCS</b></font>$ git config --global user.email &quot;fakeemail@email.com&quot;
+                </pre>
+            </li>
+            <li>
+                <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/julianf/projects/VCS</b></font>$ git help config
+                </pre>
+            </li>
+            <li>Initialize a Git repository in the desired file structure with "git init"</li>
+            <li>Check the status of your Git repository with "git status"</li>
+            <li>
+                If you want your Git repository to ignore files, use the command "touch .gitignore"
+                to add a file that will track folders or files that you want Git to ignore.
+            </li>
+            <li>
+                In order to edit the .gitignore file, use any text editor like gedit, and add the folders
+                orfiles that you would like to track.
+            </li>
+            <li>
+                To add files to the Git staging area, use the command "git add (Insert File)". If you want
+                to add every file in the repo, use the command "git add -A"
+            </li>
+            <li>
+                To remove files from the staging area, use the command "git reset".
+            </li>
+            <li>
+                <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/julianf/projects/VCS</b></font>$ git commit -m &quot;Initial Commit&quot;
+                </pre>
+            </li>
+            <li>
+                <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/julianf/projects/VCS</b></font>$ git log
+                </pre>
+            </li>
+        </ul>
+        <h5>Continue on Thrusday 23 May</h5>
+</body>
+</html>

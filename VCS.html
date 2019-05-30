@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Git/GitHub</title>
+  <link rel="stylesheet" type="text/css" href="css/VCS.css">
+
+</head>
+
+<body>
+
+<h1>Git/GitHub Project - Fenix D</h1>
+<p><b>Version Control</b> is important because it helps a programming team keep track of the possible changes that may have occured.
+  This allows developers to go back and look at previous version in case a mistake occurs.
+  Disruption amongst team members is also diminished while searching for a mistake.
+</p>
+<p><a href="https://www.atlassian.com/git/tutorials/what-is-version-control">Source 1</a></p>
+
+<p><b>Git</b> is a locally installed version control tool that assists in managing the history of a source code.
+  <b>GitHub</b>, on the other hand, is a cloud based service that stores code used by the Git tool. It also allows for easier collaboration on projects.
+</p>
+<p><a href="https://www.theserverside.com/video/Git-vs-GitHub-What-is-the-difference-between-them">Source 2</a></p>
+
+<h2>Steps to set up Git</h2>
+<ol>
+  <li>compsci@compsci-VBox:~$ sudo apt update</li>
+  <li>compsci@compsci-VBox:~$ sudo apt install git</li>
+  <li>compsci@compsci-VBox:~$ sudo apt install git --version</li>
+  <li>compsci@compsci-VBox:~$ git config --global user.name "fdiet7958"</li>
+  <li>compsci@compsci-VBox:~$ git config --global user.email "fdiet7958@westada.org"</li>
+  <li>compsci@compsci-VBox:~$ git config --list</li>
+  <li>compsci@compsci-VBox:var/www/html/fdiet$ git init</li>
+  <li>compsci@compsci-VBox:var/www/html/fdiet/projects/VCS$ git config --help</li>
+  <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ git init
+    <br>
+    Initialized empty Git repository in /var/www/html/fenixd/projects/VCS/.git/</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ cd .git/</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS/.git$ ll
+      <br>
+        total 40
+      <br>
+        drwxr-xr-x 7 compsci compsci 4096 May 30 08:06 ./
+      <br>
+        drwxrwxr-x 7 compsci compsci 4096 May 30 08:08 ../
+      <br>
+        drwxr-xr-x 2 compsci compsci 4096 May 30 08:06 branches/
+      <br>
+        -rw-r--r-- 1 compsci compsci   92 May 30 08:06 config
+      <br>
+        -rw-r--r-- 1 compsci compsci   73 May 30 08:06 description
+      <br>
+        -rw-r--r-- 1 compsci compsci   23 May 30 08:06 HEAD
+      <br>
+        drwxr-xr-x 2 compsci compsci 4096 May 30 08:06 hooks/
+      <br>
+        drwxr-xr-x 2 compsci compsci 4096 May 30 08:06 info/
+      <br>
+        drwxr-xr-x 4 compsci compsci 4096 May 30 08:06 objects/
+      <br>
+        drwxr-xr-x 4 compsci compsci 4096 May 30 08:06 refs/
+   </li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS/.git$ cd ..</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ rm -rf .git</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ ll</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ git status</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ touch .gitignore</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ gedit .gitignore</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ git add -A</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ git status</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ git reset</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ git commit -m "Initial commit"</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS/GitHubClones$ git remote -v
+      <br>
+        origin	https://github.com/fdiet7958/VCS-fdiet.git (fetch)
+        <br>
+        origin	https://github.com/fdiet7958/VCS-fdiet.git (push)</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ git diff</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ git remote add origin https://github.com/fdiet7958/VCS_fdiet.git</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ git pull origin master --allow-unrelated-histories</li>
+    <li>compsci@compsci-VBox:/var/www/html/fenixd/projects/VCS$ git push origin master</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+
+</body>
+
+</html>
